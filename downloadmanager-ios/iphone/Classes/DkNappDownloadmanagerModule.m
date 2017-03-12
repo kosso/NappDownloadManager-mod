@@ -45,9 +45,6 @@
 
 -(void)startup
 {
-    // [self cleanUpQueues];
-    // NSLog(@"[INFO] NUKED EVERYTHING!");
-    // Now called using cleanUp() when desired.
     
     downloader = [[Downloader alloc] init];
     [downloader setDelegate:self];
@@ -116,11 +113,7 @@ MAKE_SYSTEM_PROP_DBL(DOWNLOAD_PRIORITY_HIGH, 0.3)
 
 -(void)cleanUpQueues
 {
-    NSLog(@"[INFO] cleanUpQueues .... ");
-    
-    // Called in the startup method (above) before initialising the downloader.
-    // Can also be called in JS with  module_name.cleanUp();
-    
+    // NSLog(@"[INFO] cleanUpQueues .... ");
     // We want to clean up any partially dowloaded files which might be referenced from the
     // DownloadQueue.dat file. When developing an app, the stored UID will always change.
     // I believe this may be causing the segmentation faults and crashes which can occur when trying to clean up after a crash during a download.
