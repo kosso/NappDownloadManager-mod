@@ -19,6 +19,10 @@ These versions of the [original NappDownloadManager](https://github.com/viezel/N
 
 
 
+Compiled module zip files can be found in the `dist` folder for each platform.
+
+
+
 #### MODIFICATIONS
 
 My usage of these modules required more control over the download queues, in particular the ability to totally 'nuke' and reset the download queue, in case of an app crash or other reason. The original version had some issues where incomplete downloads in the queue could not be safely deleted or removed. [[see issues](https://github.com/viezel/NappDownloadManager/issues)] - particulary when developing an app, since app UIDs change in the stored filepaths on each deployment (to the simulator or device). 
