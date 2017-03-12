@@ -21,7 +21,7 @@ These versions of the [original NappDownloadManager](https://github.com/viezel/N
 
 #### MODIFICATIONS
 
-My usage of these modules required more control over the download queues, in particular the ability to totally 'nuke' and reset the download queue, in case of an app crash or other reason. The original version had some issues where incomplete downloads in the queue could not be safely deleted or removed. [[see issues](https://github.com/viezel/NappDownloadManager/issues)] - particulary when developing an app, since ad UIDs change in the stored filepaths on each deployment (to the simulator or device). 
+My usage of these modules required more control over the download queues, in particular the ability to totally 'nuke' and reset the download queue, in case of an app crash or other reason. The original version had some issues where incomplete downloads in the queue could not be safely deleted or removed. [[see issues](https://github.com/viezel/NappDownloadManager/issues)] - particulary when developing an app, since app UIDs change in the stored filepaths on each deployment (to the simulator or device). 
 
 To clean things up, a method called `cleanUp()` has been introduced to both platforms which will look for any existing queue data files, read them, then clean up any partial downloads from an aborted previous session and finally delete the queue data files again, completely resetting the queue. 
 
