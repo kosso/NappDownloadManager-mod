@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 3.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: downloadmanager-ios
+author: Napp.dk Modified by Kosso.
+license: MIT
+copyright: 2017
+
+# these should not be edited
+name: downloadmanager-ios
+moduleid: dk.napp.downloadmanager
+guid: d88ca63f-337b-4fb5-8721-93e73407e99d
+platform: iphone
+minsdk: 6.0.1.GA

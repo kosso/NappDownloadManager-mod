@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* DkNappDownloadmanagerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* DkNappDownloadmanagerModule.h */; };
+		24DD6CFA1134B3F500162E58 /* DkNappDownloadmanagerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* DkNappDownloadmanagerModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.m */; };
+		6A922B7F1E755A5700CC7665 /* BaseDownloadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B6E1E755A5700CC7665 /* BaseDownloadRequest.h */; };
+		6A922B801E755A5700CC7665 /* BaseDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A922B6F1E755A5700CC7665 /* BaseDownloadRequest.m */; };
+		6A922B811E755A5700CC7665 /* CompletedDownloadCatalog.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B701E755A5700CC7665 /* CompletedDownloadCatalog.h */; };
+		6A922B821E755A5700CC7665 /* CompletedDownloadCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A922B711E755A5700CC7665 /* CompletedDownloadCatalog.m */; };
+		6A922B831E755A5700CC7665 /* Downloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B721E755A5700CC7665 /* Downloader.h */; };
+		6A922B841E755A5700CC7665 /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A922B731E755A5700CC7665 /* Downloader.m */; };
+		6A922B851E755A5700CC7665 /* DownloadInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B741E755A5700CC7665 /* DownloadInformation.h */; };
+		6A922B861E755A5700CC7665 /* DownloadInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A922B751E755A5700CC7665 /* DownloadInformation.m */; };
+		6A922B871E755A5700CC7665 /* DownloadQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B761E755A5700CC7665 /* DownloadQueue.h */; };
+		6A922B881E755A5700CC7665 /* DownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A922B771E755A5700CC7665 /* DownloadQueue.m */; };
+		6A922B891E755A5700CC7665 /* DownloadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B781E755A5700CC7665 /* DownloadRequest.h */; };
+		6A922B8A1E755A5700CC7665 /* DownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A922B791E755A5700CC7665 /* DownloadRequest.m */; };
+		6A922B8B1E755A5700CC7665 /* DownloadStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B7A1E755A5700CC7665 /* DownloadStatus.h */; };
+		6A922B8C1E755A5700CC7665 /* NetworkTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B7B1E755A5700CC7665 /* NetworkTypes.h */; };
+		6A922B8D1E755A5700CC7665 /* ProgressiveDownloaderStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B7C1E755A5700CC7665 /* ProgressiveDownloaderStatus.h */; };
+		6A922B8E1E755A5700CC7665 /* SingleDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A922B7D1E755A5700CC7665 /* SingleDownload.h */; };
+		6A922B8F1E755A5700CC7665 /* SingleDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A922B7E1E755A5700CC7665 /* SingleDownload.m */; };
+		AA747D9F0F9514B9006C5449 /* DkNappDownloadmanager_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* DkNappDownloadmanager_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "downloadmanager-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* DkNappDownloadmanagerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DkNappDownloadmanagerModule.h; path = Classes/DkNappDownloadmanagerModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* DkNappDownloadmanagerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DkNappDownloadmanagerModule.m; path = Classes/DkNappDownloadmanagerModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DkNappDownloadmanagerModuleAssets.h; path = Classes/DkNappDownloadmanagerModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DkNappDownloadmanagerModuleAssets.m; path = Classes/DkNappDownloadmanagerModuleAssets.m; sourceTree = "<group>"; };
+		6A922B6E1E755A5700CC7665 /* BaseDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseDownloadRequest.h; path = Classes/BaseDownloadRequest.h; sourceTree = "<group>"; };
+		6A922B6F1E755A5700CC7665 /* BaseDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseDownloadRequest.m; path = Classes/BaseDownloadRequest.m; sourceTree = "<group>"; };
+		6A922B701E755A5700CC7665 /* CompletedDownloadCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompletedDownloadCatalog.h; path = Classes/CompletedDownloadCatalog.h; sourceTree = "<group>"; };
+		6A922B711E755A5700CC7665 /* CompletedDownloadCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompletedDownloadCatalog.m; path = Classes/CompletedDownloadCatalog.m; sourceTree = "<group>"; };
+		6A922B721E755A5700CC7665 /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Downloader.h; path = Classes/Downloader.h; sourceTree = "<group>"; };
+		6A922B731E755A5700CC7665 /* Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Downloader.m; path = Classes/Downloader.m; sourceTree = "<group>"; };
+		6A922B741E755A5700CC7665 /* DownloadInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadInformation.h; path = Classes/DownloadInformation.h; sourceTree = "<group>"; };
+		6A922B751E755A5700CC7665 /* DownloadInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadInformation.m; path = Classes/DownloadInformation.m; sourceTree = "<group>"; };
+		6A922B761E755A5700CC7665 /* DownloadQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadQueue.h; path = Classes/DownloadQueue.h; sourceTree = "<group>"; };
+		6A922B771E755A5700CC7665 /* DownloadQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadQueue.m; path = Classes/DownloadQueue.m; sourceTree = "<group>"; };
+		6A922B781E755A5700CC7665 /* DownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadRequest.h; path = Classes/DownloadRequest.h; sourceTree = "<group>"; };
+		6A922B791E755A5700CC7665 /* DownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadRequest.m; path = Classes/DownloadRequest.m; sourceTree = "<group>"; };
+		6A922B7A1E755A5700CC7665 /* DownloadStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadStatus.h; path = Classes/DownloadStatus.h; sourceTree = "<group>"; };
+		6A922B7B1E755A5700CC7665 /* NetworkTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkTypes.h; path = Classes/NetworkTypes.h; sourceTree = "<group>"; };
+		6A922B7C1E755A5700CC7665 /* ProgressiveDownloaderStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressiveDownloaderStatus.h; path = Classes/ProgressiveDownloaderStatus.h; sourceTree = "<group>"; };
+		6A922B7D1E755A5700CC7665 /* SingleDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingleDownload.h; path = Classes/SingleDownload.h; sourceTree = "<group>"; };
+		6A922B7E1E755A5700CC7665 /* SingleDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingleDownload.m; path = Classes/SingleDownload.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* DkNappDownloadmanager_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DkNappDownloadmanager_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libdk.napp.downloadmanager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdk.napp.downloadmanager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libdk.napp.downloadmanager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* downloadmanager-ios */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = "downloadmanager-ios";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6A922B6E1E755A5700CC7665 /* BaseDownloadRequest.h */,
+				6A922B6F1E755A5700CC7665 /* BaseDownloadRequest.m */,
+				6A922B701E755A5700CC7665 /* CompletedDownloadCatalog.h */,
+				6A922B711E755A5700CC7665 /* CompletedDownloadCatalog.m */,
+				6A922B721E755A5700CC7665 /* Downloader.h */,
+				6A922B731E755A5700CC7665 /* Downloader.m */,
+				6A922B741E755A5700CC7665 /* DownloadInformation.h */,
+				6A922B751E755A5700CC7665 /* DownloadInformation.m */,
+				6A922B761E755A5700CC7665 /* DownloadQueue.h */,
+				6A922B771E755A5700CC7665 /* DownloadQueue.m */,
+				6A922B781E755A5700CC7665 /* DownloadRequest.h */,
+				6A922B791E755A5700CC7665 /* DownloadRequest.m */,
+				6A922B7A1E755A5700CC7665 /* DownloadStatus.h */,
+				6A922B7B1E755A5700CC7665 /* NetworkTypes.h */,
+				6A922B7C1E755A5700CC7665 /* ProgressiveDownloaderStatus.h */,
+				6A922B7D1E755A5700CC7665 /* SingleDownload.h */,
+				6A922B7E1E755A5700CC7665 /* SingleDownload.m */,
+				24DE9E0F11C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* DkNappDownloadmanagerModule.h */,
+				24DD6CF81134B3F500162E58 /* DkNappDownloadmanagerModule.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* DkNappDownloadmanager_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* DkNappDownloadmanager_Prefix.pch in Headers */,
+				6A922B831E755A5700CC7665 /* Downloader.h in Headers */,
+				6A922B871E755A5700CC7665 /* DownloadQueue.h in Headers */,
+				6A922B811E755A5700CC7665 /* CompletedDownloadCatalog.h in Headers */,
+				6A922B891E755A5700CC7665 /* DownloadRequest.h in Headers */,
+				24DD6CF91134B3F500162E58 /* DkNappDownloadmanagerModule.h in Headers */,
+				6A922B8C1E755A5700CC7665 /* NetworkTypes.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.h in Headers */,
+				6A922B7F1E755A5700CC7665 /* BaseDownloadRequest.h in Headers */,
+				6A922B8B1E755A5700CC7665 /* DownloadStatus.h in Headers */,
+				6A922B851E755A5700CC7665 /* DownloadInformation.h in Headers */,
+				6A922B8E1E755A5700CC7665 /* SingleDownload.h in Headers */,
+				6A922B8D1E755A5700CC7665 /* ProgressiveDownloaderStatus.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* downloadmanager-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "downloadmanager-ios" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "downloadmanager-ios";
+			productName = "downloadmanager-ios";
+			productReference = D2AAC07E0554694100DB518D /* libdk.napp.downloadmanager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "downloadmanager-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* downloadmanager-ios */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* downloadmanager-ios */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A922B861E755A5700CC7665 /* DownloadInformation.m in Sources */,
+				6A922B8F1E755A5700CC7665 /* SingleDownload.m in Sources */,
+				6A922B801E755A5700CC7665 /* BaseDownloadRequest.m in Sources */,
+				6A922B821E755A5700CC7665 /* CompletedDownloadCatalog.m in Sources */,
+				6A922B841E755A5700CC7665 /* Downloader.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* DkNappDownloadmanagerModule.m in Sources */,
+				6A922B8A1E755A5700CC7665 /* DownloadRequest.m in Sources */,
+				6A922B881E755A5700CC7665 /* DownloadQueue.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* DkNappDownloadmanagerModuleAssets.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* downloadmanager-ios */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/DkNappDownloadmanager.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DkNappDownloadmanager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = dk.napp.downloadmanager;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/DkNappDownloadmanager.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DkNappDownloadmanager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = dk.napp.downloadmanager;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/DkNappDownloadmanager.dst;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DkNappDownloadmanager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = dk.napp.downloadmanager;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/DkNappDownloadmanager.dst;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DkNappDownloadmanager_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = dk.napp.downloadmanager;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "downloadmanager-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "downloadmanager-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
